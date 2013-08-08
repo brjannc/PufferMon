@@ -1,0 +1,3 @@
+query-port: 2565
+whitelist:
+  - 127.0.0.1

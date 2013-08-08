@@ -1,0 +1,7 @@
+name: ${project.name}
+version: ${project.version}
+author: brjannc
+description: ${project.description}
+main: me.brjannc.plugins.puffermon.PufferMon
+load: postworld
+database: false
