@@ -24,15 +24,17 @@ Put puffermon.cfg in /etc/icinga/objects/global
 
 Define the service in the host config file in /etc/icinga/objects/<yourhost_namehere>
 
-`$define service {
-`$  service_description                   puffermon
-`$  check_command                         check_puffermon!127.0.0.1!2565
-`$  host_name                             <yourhost_name>
-`$  check_period                          24x7
-`$  notification_period                   24x7
-`$  contact_groups                        +admins
-`$  check_interval                        1
-`$  notification_options                  n
-`$  event_handler_enabled                 0
-`$  use                                   generic-service,pnp-service
-`$}
+```
+define service {
+  service_description                   puffermon
+  check_command                         check_puffermon!127.0.0.1!2565
+  host_name                             <yourhost_name>
+  check_period                          24x7
+  notification_period                   24x7
+  contact_groups                        +admins
+  check_interval                        1
+  notification_options                  n
+  event_handler_enabled                 0
+  use                                   generic-service,pnp-service
+}
+```
